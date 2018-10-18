@@ -4,6 +4,9 @@ use sakila;
 alter table actor
 	add actor_name varchar(50) not null;
 
+alter table actor
+	drop column actor_name;
+
 select * from actor;
 
 -- this don't work in mysql apparently
